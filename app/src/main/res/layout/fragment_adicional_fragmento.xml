@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Plata"
+        tools:context=".ui.main.AdicionalFragmento">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnOperaciones"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Operaciones"
+            android:backgroundTint="@color/PlataDark"/>
+
+        <Button
+            android:id="@+id/btnRespuesta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Respuesta"
+            android:backgroundTint="@color/PlataDark"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/ContenedorAdd"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_weight="1"></FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/contrast_op"
+    tools:context=".ui.main.Operaciones">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:background="@color/PlataDark"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="392dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="OPERACION"
+            android:textColor="@android:color/white"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtNumero1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:hint="Ingrese el número 1"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textColorHint="@color/Plata"/>
+
+    <EditText
+        android:id="@+id/txtNumero2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:hint="Ingrese el número 2"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textColorHint="@color/Plata"/>
+
+    <Spinner
+        android:id="@+id/spinnerAccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:entries="@array/acciones"
+        android:background="@drawable/spinner"/>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:textSize="16dp"
+        android:text="Enviar"
+        android:backgroundTint="@color/PlataDark"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
+
